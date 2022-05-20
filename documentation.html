@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Documentation</title>
+    <link rel="stylesheet" type="text/css" href="#" />
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+      <h1>myFlix App</h1>
+      <h2>Create a REST API with Node.js</h2>
+    </header>
+
+    <section>
+      <h3>Objective</h3>
+      <p>To build the server-side component of the "myFlix" web application</p>
+      <p>
+        The web application will provide users with access to informatoin about
+        different movies, directors, and genres.
+      </p>
+      <p>
+        Out users will be able to sign up, update their personal information,
+        and create a list of favorite movies
+      </p>
+    </section>
+
+    <br />
+    <br />
+
+    <section>
+      <table>
+        <tr>
+          <th>Request</th>
+          <th>Url Endpoint</th>
+          <th>HTTP Method</th>
+          <th>Request Body</th>
+          <th>Request Example</th>
+          <th>Response Body</th>
+          <th>Response Body Example</th>
+        </tr>
+        <tr>
+          <td>Get a list of all movies</td>
+          <td>/movies</td>
+          <td>GET</td>
+          <td>None</td>
+          <td>/movies</td>
+          <td>JSON</td>
+          <td>A JSON object holding data about all the movies</td>
+        </tr>
+        <tr>
+          <td>
+            Get information of one specific movie by title, use %20 for spaces
+          </td>
+          <td>/movies/:Title</td>
+          <td>GET</td>
+          <td>None</td>
+          <td>/movies/The%20Dark%20Knight</td>
+          <td>JSON</td>
+          <td>
+            { <br />Title: "The Dark Knight",<br />
+            Description: "After a childhood tragedy, Bruce Wayne...",<br />
+            Genre: "Includes Name and Description", <br />
+            Director: "Includes Name, Bio, Birth, Death (i/a)", <br />
+            ImagePath: "theDarkKnight.png", <br />
+            Featured: false <br />
+            }
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Return data about genre of a movie by its title, use %20 for spaces
+          </td>
+          <td>/movies/Genres/:Name</td>
+          <td>GET</td>
+          <td>None</td>
+          <td>/movies/Genres/Superhero</td>
+          <td>JSON</td>
+          <td>
+            { <br />
+            Name: "Superhero", <br />
+            Description: "Superhero is a genre that focuses on heroes with
+            superhuman abilities"<br />
+            }
+          </td>
+        </tr>
+        <tr>
+          <td>Return data about a director by name, use %20 for spaces</td>
+          <td>/movies/Directors/:Name</td>
+          <!-- are the directors being found by list of directors or from the list of movies? -->
+          <td>GET</td>
+          <td>None</td>
+          <td>/movies/Directors/Christopher%20Nolan</td>
+          <td>JSON</td>
+          <td>
+            { <br />
+            name: "Christopher%20Nolan", <br />
+            Bio: "Christopher Nolan is a British filmmaker", <br />
+            Birth: "1970" <br />
+            }
+          </td>
+        </tr>
+        <tr>
+          <td>Allow new users to register</td>
+          <td>/users</td>
+          <td>POST</td>
+          <td>JSON</td>
+          <td>
+            { <br />
+            Username: "annjones", <br />
+            Password: "testpassword456", <br />
+            Email: "annjones@gmail.com", <br />
+            Birthdate: 1993-08-01, <br />
+            FavoriteMovie: objectID <br />
+            }
+          </td>
+          <td>JSON</td>
+          <td>
+            { <br />
+            id: 5, <br />
+            Username: "annjones", <br />
+            Password: "testpassword456", <br />
+            Email: "annjones@gmail.com", <br />
+            Birthdate: 1993-08-01, <br />
+            FavoriteMovie: objectID <br />
+            }
+          </td>
+        </tr>
+        <tr>
+          <td>Allow users to update their registration information</td>
+          <td>/users/:Username</td>
+          <td>PUT</td>
+          <td>JSON</td>
+          <td>
+            { <br />
+            Username: "annjones", <br />
+            Password: "testpassword456", <br />
+            Email: "annjones56@gmail.com", <br />
+            Birthdate: 1993-08-01, <br />
+            FavoriteMovie: objectID <br />
+            }
+          </td>
+          <td>JSON</td>
+          <td>
+            { <br />
+            id: 5, <br />
+            Username: "annjones", <br />
+            Password: "testpassword456", <br />
+            Email: "annjones56@gmail.com", <br />
+            Birthdate: 1993-08-01, <br />
+            FavoriteMovie: objectID <br />
+            }
+          </td>
+        </tr>
+        <tr>
+          <td>Allows users to add a movie to list of favorite movies</td>
+          <td>/users/:Username/Movies/:MovieID</td>
+          <td>POST</td>
+          <td>None</td>
+          <td>/users/carlosflores/Movies/1x1x1x1x1x1x</td>
+          <td>Message</td>
+          <td>"Movie successfully added to your favourites"</td>
+        </tr>
+        <tr>
+          <td>Allow users to remove a movie from their favourites list</td>
+          <td>/users/:Username/Movies/:MovieID</td>
+          <td>DELETE</td>
+          <td>None</td>
+          <td>/users/carlosflores/Movies/2y2y2y2y2y2y</td>
+          <td>Message</td>
+          <td>"Movie successfully removed from your favourites"</td>
+        </tr>
+        <tr>
+          <td>Allow existing users to de-register</td>
+          <td>/users/:Username</td>
+          <td>DELETE</td>
+          <td>None</td>
+          <td>/users/carlosflores</td>
+          <td>Message</td>
+          <td>"carlosflores was successfully de-registered from myFlix"</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

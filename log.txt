@@ -1,0 +1,78 @@
+URL: /
+Timestamp: Fri May 20 2022 19:01:12 GMT-0400 (Eastern Daylight Time)
+
+URL: /
+Timestamp: Fri May 20 2022 19:05:03 GMT-0400 (Eastern Daylight Time)
+
+URL: /style.css
+Timestamp: Fri May 20 2022 19:05:03 GMT-0400 (Eastern Daylight Time)
+
+URL: /main.js
+Timestamp: Fri May 20 2022 19:05:03 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:05:03 GMT-0400 (Eastern Daylight Time)
+
+URL: /
+Timestamp: Fri May 20 2022 19:05:17 GMT-0400 (Eastern Daylight Time)
+
+URL: /style.css
+Timestamp: Fri May 20 2022 19:05:17 GMT-0400 (Eastern Daylight Time)
+
+URL: /main.js
+Timestamp: Fri May 20 2022 19:05:17 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:05:17 GMT-0400 (Eastern Daylight Time)
+
+URL: /
+Timestamp: Fri May 20 2022 19:09:32 GMT-0400 (Eastern Daylight Time)
+
+URL: /main.js
+Timestamp: Fri May 20 2022 19:09:32 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:09:32 GMT-0400 (Eastern Daylight Time)
+
+URL: /index.html
+Timestamp: Fri May 20 2022 19:11:33 GMT-0400 (Eastern Daylight Time)
+
+URL: /main.js
+Timestamp: Fri May 20 2022 19:11:33 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:11:34 GMT-0400 (Eastern Daylight Time)
+
+URL: /index.html
+Timestamp: Fri May 20 2022 19:15:38 GMT-0400 (Eastern Daylight Time)
+
+URL: /main.js
+Timestamp: Fri May 20 2022 19:15:38 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:15:38 GMT-0400 (Eastern Daylight Time)
+
+URL: /index.html
+Timestamp: Fri May 20 2022 19:26:17 GMT-0400 (Eastern Daylight Time)
+
+URL: /main.js
+Timestamp: Fri May 20 2022 19:26:17 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:26:17 GMT-0400 (Eastern Daylight Time)
+
+URL: /documentation.html
+Timestamp: Fri May 20 2022 19:26:38 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:26:38 GMT-0400 (Eastern Daylight Time)
+
+URL: /documentation.html
+Timestamp: Fri May 20 2022 19:27:41 GMT-0400 (Eastern Daylight Time)
+
+URL: /documentation.html
+Timestamp: Fri May 20 2022 19:27:41 GMT-0400 (Eastern Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Fri May 20 2022 19:27:41 GMT-0400 (Eastern Daylight Time)
+
