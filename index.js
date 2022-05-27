@@ -2,60 +2,19 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const uuid = require('uuid');
+const mongoose = require('mongoose');
+const Models = require('./models.js');
 
 const app = express();
 
 app.use(morgan('common'));
 app.use(bodyParser.json());
 
-let users = [
-  {
-    name: "Rob Caracol", 
-    favoriteMovies: [],
-    id: 1
-  },
-  {
-    name: "Bobby Fish", 
-    favoriteMovies: ["A Fistful of Dollars", "The Hateful Eight"],
-    id: 2
-  }
-];
+const Movies = Models.Movie;
+const Users = Models.User;
 
-let topMovies = [
-  {
-    title: "Once Upon a Time in Hollywood",
-    director: {
-      Name: 'Quentin Tarantino', 
-      Description: 'He is an American Filmmaker'
-    }, 
-    Genre: {
-      Name: 'Comedy-Drama', 
-      Description: 'Elements of Comedy and Drama'
-    }
-  },
-  {
-    title: "The Hateful Eight",
-    director: {
-      Name: 'Quentin Tarantino', 
-      Description: 'He is an American Filmmaker'
-    }, 
-    Genre: {
-      Name: 'Western', 
-      Description: 'Set in the American West'
-    }
-  },
-  {
-    title: "A Fistful of Dollars",
-    director: {
-      Name: 'Sergio Leone', 
-      Description: 'He was an Italian Filmmaker'
-    }, 
-    Genre: {
-      Name: 'Western', 
-      Description: 'Set in the American West'
-    }
-  }
-];
+//allows mongoose to connect to the database --> allows to perform CRUD operations on the documents
+mongoose.connect('mongodb://localhost:27017/movieApp', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.get('/', (req, res) => {
   res.send("Welcome to my Movie App.");
@@ -183,3 +142,54 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
   console.log('Your app is listening on port 8080');
 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// let users = [
+//   {
+//     name: "Rob Caracol", 
+//     favoriteMovies: [],
+//     id: 1
+//   },
+//   {
+//     name: "Bobby Fish", 
+//     favoriteMovies: ["A Fistful of Dollars", "The Hateful Eight"],
+//     id: 2
+//   }
+// ];
+
+// let topMovies = [
+//   {
+//     title: "Once Upon a Time in Hollywood",
+//     director: {
+//       Name: 'Quentin Tarantino', 
+//       Description: 'He is an American Filmmaker'
+//     }, 
+//     Genre: {
+//       Name: 'Comedy-Drama', 
+//       Description: 'Elements of Comedy and Drama'
+//     }
+//   },
+//   {
+//     title: "The Hateful Eight",
+//     director: {
+//       Name: 'Quentin Tarantino', 
+//       Description: 'He is an American Filmmaker'
+//     }, 
+//     Genre: {
+//       Name: 'Western', 
+//       Description: 'Set in the American West'
+//     }
+//   },
+//   {
+//     title: "A Fistful of Dollars",
+//     director: {
+//       Name: 'Sergio Leone', 
+//       Description: 'He was an Italian Filmmaker'
+//     }, 
+//     Genre: {
+//       Name: 'Western', 
+//       Description: 'Set in the American West'
+//     }
+//   }
+// ];
