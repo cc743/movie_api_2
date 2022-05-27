@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+//This is the business logic.  Link bewteen database and API(server)
+
 let movieSchema = mongoose.Schema({
   Title: {type: String, required: true},
   Description: {type: String, required: true},
