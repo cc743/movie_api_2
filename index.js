@@ -23,7 +23,8 @@ const Movies = Models.Movie;
 const Users = Models.User;
 
 //allows mongoose to connect to the database --> allows to perform CRUD operations on the documents via the models
-mongoose.connect('mongodb://localhost:27017/movieApp', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect('mongodb://localhost:27017/movieApp', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.get('/', (req, res) => {
   res.send("Welcome to my Movie App.");
@@ -210,6 +211,7 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something broke');
 });  //need to revise this error handling middleware function
 
-app.listen(8080, () => {
-  console.log('Your app is listening on port 8080');
+const port = process.env.PORT || 8080;
+app.listen(port, '0.0.0.0', () => {
+  console.log('Listening on port ' + port);
 });
