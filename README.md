@@ -33,8 +33,8 @@ Available movies and user endpoints (please note the use of "%20" to encode a sp
 - Users (Examples)
   - POST Request: https://evening-ridge-21612.herokuapp.com/users - register a user (must include raw JSON info)
   - PUT Request: https://evening-ridge-21612.herokuapp.com/users/:Username - Edit user information by username (i.e. tracymcgrady)
-  - POST Request: https://evening-ridge-21612.herokuapp.com/users/:username/movies/:movieID - Add movie to user's list of favorite movies 
+  - POST Request: https://evening-ridge-21612.herokuapp.com/users/:Username/movies/:movieID - Add movie to user's list of favorite movies 
   (i.e. https://evening-ridge-21612.herokuapp.com/users/tracymcgrady/movies/5f9775aa4f731ed4350df25d)
-  - DELETE Request: https://evening-ridge-21612.herokuapp.com/users/:username/movies/:movieID - Delete movie from user's list of favorite movies
+  - DELETE Request: https://evening-ridge-21612.herokuapp.com/users/:Username/movies/:movieID - Delete movie from user's list of favorite movies
   (i.e. https://evening-ridge-21612.herokuapp.com/users/tracymcgrady/movies/5f97812701d0ee8d4abfed9f)
-  - DELETE Request: https://evening-ridge-21612.herokuapp.com/users/:username - Delete a user from the database (a.k.a. deregister)
+  - DELETE Request: https://evening-ridge-21612.herokuapp.com/users/:Username - Delete a user from the database (a.k.a. deregister)
