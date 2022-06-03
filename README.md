@@ -7,7 +7,7 @@ In order to get started, one must make a POST request in order to add a new user
 ![Register Snip](/public/snip1_register.PNG)
 
 Next, one must log in using a POST request to the following endpoint: https://evening-ridge-21612.herokuapp.com/login
--When logging in, go to the "Params" tab. Enter Username and Password (uppercase) in the "Key" section. Enter the user's username and password in the "Value" section: 
+- When logging in, go to the "Params" tab. Enter Username and Password (uppercase) in the "Key" section. Enter the user's username and password in the "Value" section: 
 ![Login Snip](/public/snip2_login.PNG)
 
 Upon successful log in, copy the token created in the JSON response like shown below:
