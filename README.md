@@ -1,5 +1,5 @@
 # movie-api
-This is the backend API for the myFlix application, a movie directory website.
+This is the backend API for the movieApp application, a movie directory website.
 
 ## Getting Started with Postman
 In order to get started, one must make a POST request in order to add a new user to the database at the following endpoint: https://evening-ridge-21612.herokuapp.com/users
